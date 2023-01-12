@@ -1,0 +1,112 @@
+:root {
+    --background: #D9CDF7;
+    --title: #271A45;
+}
+
+html,
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+p,
+button,
+input,
+select {
+    margin: 0;
+    outline: inherit;
+    background: none;
+    border: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    gap: 32px;
+}
+
+.image {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.icon-button {
+    position: absolute;
+    display: flex;
+    right: 0;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.cod {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 100%;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.title {
+    font-family: 'Crimson Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    color: var(--title);
+}
+
+.price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--title);
+    opacity: 0.8;
+}
+
+.add-button {
+    text-transform: uppercase;
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    width: 168px;
+    height: 32px;
+    border: 0.5px solid var(--title);
+    border-radius: 999px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: var(--title);
+    color: var(--background);
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+}
